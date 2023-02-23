@@ -2,21 +2,37 @@
     .wrpItemSecond {
         display: flex;
     }
+
     .landingItemVue {
         display: flex;
     }
+
+    .wrpBlockName .contactsWrapper {
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: row;
+    }
+
+    .wrpBlockName .contactsWrapper div {
+        margin-top: 0;
+        margin: 0 1rem;
+    }
+
     .right {
         display: flex;
         flex-direction: column;
     }
+
     .left {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
     }
+
     .specBlock {
         width: 50%;
     }
+
     .landingItemStrong {
         grid-row: 1 / span 2;
     }
@@ -26,9 +42,11 @@
     .navbarMain a {
         font-size: 15px;
     }
+
     .nameOFJob {
         font-size: 29px;
     }
+
     .wrpNameBlockName p {
         font-size: 21px;
     }
@@ -38,6 +56,7 @@
     .titleH {
         margin-top: 80px;
     }
+
     .navbarMain a {
         margin-right: 2em;
         white-space: nowrap;
@@ -49,26 +68,32 @@
         display: flex;
         justify-content: space-between;
     }
+
     .aboutMe p, .aboutMe h3, .aboutMe h4, .aboutMe h2, .aboutMe span {
         transform: skew(175deg);
     }
+
     .right {
         margin-right: 2rem;
         width: 50%;
     }
+
     .left {
         margin-right: 2rem;
         width: 50%;
     }
+
     .wrpForm {
         width: 55%;
         margin-left: 2rem;
     }
+
     .navbarMain {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
+
     .myWorks .wrpAllContent {
         display: grid;
         justify-items: center;
@@ -78,6 +103,7 @@
         grid-template-rows: repeat(5, 260px);
         margin-top: 2rem;
     }
+
     .myWorks .wrpVue {
         display: grid;
         align-items: baseline;
@@ -87,6 +113,7 @@
         grid-template-rows: repeat(1, 220px);
         margin-top: 4rem;
     }
+
     .myWorks #fullstack .wrpVue {
         margin-top: 2rem;
     }
@@ -94,7 +121,7 @@
     .aboutWrp {
         transform: skew(-175deg);
     }
-    
+
 }
 
 @media (min-width: 992px) {}
@@ -103,7 +130,7 @@
 
 @media (min-width: 1200px) {}
 
-p, a, h1, h2, h3, h4, h5, h6, button {
+p, a, h1, h2, h3, h4, h5, h6, button, li {
     font-family: 'Piazzolla', serif;
 }
 
@@ -129,7 +156,7 @@ h2 {
     border: 4px solid #2d93a1;
     transition: 0.3s ease-in-out;
     animation: shadowTwo 1s infinite alternate;
-    transform: skew( -175deg);
+    transform: skew(-175deg);
 }
 
 .specBlock {
@@ -343,6 +370,7 @@ h2 {
 .wrpAbout {
     margin-bottom: 40px;
     margin-top: 2rem;
+    width: 100%;
 }
 
 #hello {
@@ -460,6 +488,7 @@ h2 {
     outline: none !important;
     transition: 0.3s ease-in-out;
     font-weight: 600;
+    text-decoration: none;
     margin-top: 1rem;
 }
 
@@ -467,6 +496,7 @@ h2 {
     transform: skew(-11deg);
     background: #2d93a1;
     color: #fff;
+    text-decoration: none;
     border: 2px solid cornsilk;
 }
 
@@ -550,19 +580,56 @@ h2 {
 }
 
 .itemStack {
-    transform: skew( 175deg);
+    transform: skew(175deg);
 }
 
 #steckDescription {
-    transform: skew( 175deg);
+    transform: skew(175deg);
 }
 
-.wrpAbout h4 {
+.sectionAbout h4 {
+    text-align: center;
+    color: #2d93a1;
     font-weight: 600;
 }
 
+.sectionAbout ul li {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #3acadd;
+}
+
+/* .sectionAbout li::before {
+    content: "";
+    color: #2d93a1;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2.5rem;
+    margin-right: 0.3rem;
+} */
+
+.boldText {
+    font-weight: 600;
+    color: #003239
+}
+
+.sectionAbout {
+    width: 100%;
+    padding-top: 1.6rem;
+}
+
+.smallText {
+    font-size: 0.9rem;
+}
+
+.sectionAbout {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 .downScroll {
-    margin-top: 4rem;
+    position: absolute;
+    bottom: 20px;
     color: #fff;
     font-size: 40px;
     transform: rotate(90deg);
@@ -583,6 +650,7 @@ h2 {
         box-shadow: 0 0 15px 5px #c6f1f7;
         ;
     }
+
     to {
         box-shadow: 0 0 30px 10px #bdecf5;
         ;
@@ -594,6 +662,7 @@ h2 {
         box-shadow: 0 1px 10px 5px #bbeaf0;
         ;
     }
+
     to {
         box-shadow: 0 0 14px 10px #8dd5e4;
         ;
@@ -807,6 +876,7 @@ h2 {
     0%, 100% {
         transform: scale(0);
     }
+
     50% {
         transform: scale(1);
     }
@@ -860,4 +930,37 @@ h2 {
 
 :root {
     --animate-delay: 0.5s;
+}
+
+.contactsWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.contactsWrapper div {
+    margin-top: 1rem;
+}
+
+.contactsWrapper div {
+    background: #f4feff;
+    padding: 0.4rem 0.6rem;
+    border-radius: 16px;
+}
+
+.contactsWrapper a {
+    color: #005d69;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contactsWrapper a:hover {
+    color: #009cb1;
+    text-decoration: none;
+}
+
+.techSpan {
+    font-weight: 600;
+    color: #00191d;
 }
