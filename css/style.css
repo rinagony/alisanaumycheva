@@ -122,6 +122,13 @@
         transform: skew(-175deg);
     }
 
+    .multipleItems {
+        display: flex;
+    }
+    
+    .sectionAboutItem {
+        width: 50%;
+    }
 }
 
 @media (min-width: 992px) {}
@@ -140,6 +147,10 @@ body {
 
 h1 {
     text-align: center;
+}
+
+* {
+    transition: 0.2s;
 }
 
 h2 {
@@ -202,6 +213,10 @@ h2 {
 
 .landingItem img:hover {
     background: rgba(0, 0, 0, 0.9);
+}
+
+#about {
+    padding-bottom: 2rem;
 }
 
 .buttonMore {
@@ -599,18 +614,13 @@ h2 {
     border-bottom: 1px solid #3acadd;
 }
 
-/* .sectionAbout li::before {
-    content: "";
-    color: #2d93a1;
-    display: inline-block;
-    width: 1em;
-    margin-left: -2.5rem;
-    margin-right: 0.3rem;
-} */
-
 .boldText {
     font-weight: 600;
     color: #003239
+}
+
+.sectionAbout h4 {
+    margin-bottom: 2rem;
 }
 
 .sectionAbout {
@@ -944,7 +954,7 @@ h2 {
 
 .contactsWrapper div {
     background: #f4feff;
-    padding: 0.4rem 0.6rem;
+    padding: 0.6rem;
     border-radius: 16px;
 }
 
@@ -963,4 +973,41 @@ h2 {
 .techSpan {
     font-weight: 600;
     color: #00191d;
+}
+
+.skillsWrapper {
+    padding-left: 1rem;
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.rangeSkill {
+    max-width: 10rem;
+    background: #d8d8d8;
+    height: 10px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.rangeSkillPercent {
+    height: 10px;
+    background: #2d93a1
+}
+
+.skillsItem p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Piazzolla', serif;
+}
+
+.contactsSection a {
+    font-weight: 600;
+    color: #003239;
+}
+
+.contactsSection a:hover {
+    color: #2d93a1;
 }
