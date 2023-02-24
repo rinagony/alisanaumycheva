@@ -36,6 +36,10 @@
     .landingItemStrong {
         grid-row: 1 / span 2;
     }
+
+    .skillsItem .rangeSkill {
+        max-width: 10rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -133,9 +137,14 @@
 
 @media (min-width: 992px) {}
 
-@media (max-width: 1200px) {}
-
-@media (min-width: 1200px) {}
+@media (min-width: 1012px) {
+   #about .sectionAbout {
+        max-width: 70%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 p, a, h1, h2, h3, h4, h5, h6, button, li {
     font-family: 'Piazzolla', serif;
@@ -625,16 +634,14 @@ h2 {
 
 .sectionAbout {
     width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 1.6rem;
+    margin: 0 auto;
 }
 
 .smallText {
     font-size: 0.9rem;
-}
-
-.sectionAbout {
-    max-width: 70%;
-    margin: 0 auto;
 }
 
 .downScroll {
@@ -984,7 +991,7 @@ h2 {
 }
 
 .rangeSkill {
-    max-width: 10rem;
+    width: 100%;
     background: #d8d8d8;
     height: 10px;
     border-radius: 3px;
