@@ -1014,6 +1014,12 @@ h2 {
     font-family: 'Piazzolla', serif;
 }
 
+.contactsSection {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
 .contactsSection a {
     font-weight: 600;
     color: #003239;
