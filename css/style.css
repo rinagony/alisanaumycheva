@@ -150,6 +150,10 @@ p, a, h1, h2, h3, h4, h5, h6, button, li {
     font-family: 'Piazzolla', serif;
 }
 
+ul {
+    padding-left: 1rem;
+}
+
 body {
     background-color: rosybrown;
 }
@@ -190,7 +194,7 @@ h2 {
 #mainSection {
     padding-bottom: 50px;
     background-size: cover;
-    min-height: 500px;
+    min-height: 35rem;
 }
 
 .wrpItemMain {
@@ -492,7 +496,7 @@ h2 {
 #mainsection {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url('../image/bg.jpg');
     background-size: cover;
-    min-height: 100vh;
+    min-height: 35rem;
 }
 
 #about {
