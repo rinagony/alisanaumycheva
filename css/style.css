@@ -259,6 +259,10 @@ h2 {
     transition: 0.3s ease-in-out;
 }
 
+#about .multipleItems {
+    margin-top: 4rem;
+}
+
 .landingItem a:hover .landingItem img {
     display: none;
 }
@@ -493,10 +497,16 @@ h2 {
     -webkit-text-stroke-color: black;
 }
 
+#sectionAbout ul li {
+    border-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-left: 1rem;
+}
 #mainsection {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url('../image/bg.jpg');
     background-size: cover;
-    min-height: 35rem;
+    min-height: 37rem;
 }
 
 #about {
@@ -982,8 +992,14 @@ h2 {
 }
 
 .techSpan {
-    font-weight: 600;
+    font-weight: 500;
     color: #00191d;
+}
+
+#techSpan ul li{
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
 }
 
 .skillsWrapper {
